@@ -1,0 +1,162 @@
+﻿@page "/"
+@using MudBlazor
+<MudAlert NoIcon="true"  Severity="Severity.Info" ContentAlignment="HorizontalAlignment.Center">
+    <h1>
+    السيرة الذاتية ليسوع المسيح  
+    </h1>
+</MudAlert>
+<MudAvatar>
+    <MudImage Src="jesus.jpg" Alt="An image of the best dog ever!"></MudImage>
+</MudAvatar>
+<MudDropContainer T="DropItem" Items="_items" ItemsSelector="@((item, dropzone) => item.Place == dropzone)" ItemDropped="ItemUpdated" Class="d-flex flex-column">
+    <ChildContent>
+        <!-- CV Template with Drop Zones for Personal Information and Skills -->
+        <MudPaper Class="p-5 mb-4">
+            <MudText Typo="Typo.h5">معلومات شخصية</MudText>
+
+            <!-- Drop Zone for Name -->
+            <MudContainer Class="d-flex flex-row mt-2">
+                <MudText Typo="Typo.body1" Class="me-2">الاسم:</MudText>
+                <MudDropZone T="DropItem" Identifier="Name" CanDrop="@((item) => item.Type == ItemType.Name)" Class="drop-zone">
+                    <MudText Typo="Typo.body1" Class="text-muted">
+                        @if (_nameItem != null)
+                        {
+                            @(_nameItem.Name)
+                        }
+                        else
+                        {
+                            <span>اسقاط الاسم هنا </span>
+                        }
+                    </MudText>
+                </MudDropZone>
+            </MudContainer>
+
+            <!-- Drop Zone for Phone -->
+            <MudContainer Class="d-flex flex-row mt-2">
+                <MudText Typo="Typo.body1" Class="me-2">رقم الهاتف:</MudText>
+                <MudDropZone T="DropItem" Identifier="Phone" CanDrop="@((item) => item.Type == ItemType.Phone)" Class="drop-zone">
+                    <MudText Typo="Typo.body1" Class="text-muted">
+                        @if (_phoneItem != null)
+                        {
+                            @(_phoneItem.Name)
+                        }
+                        else
+                        {
+                            <span>اسقاط رقم الهاتف هنا </span>
+                        }
+                    </MudText>
+                </MudDropZone>
+            </MudContainer>
+
+            <!-- Drop Zone for Age -->
+            <MudContainer Class="d-flex flex-row mt-2">
+                <MudText Typo="Typo.body1" Class="me-2">العمر:</MudText>
+                <MudDropZone T="DropItem" Identifier="Age" CanDrop="@((item) => item.Type == ItemType.Age)" Class="drop-zone">
+                    <MudText Typo="Typo.body1" Class="text-muted">
+                        @if (_ageItem != null)
+                        {
+                            @(_ageItem.Name)
+                        }
+                        else
+                        {
+                            <span>اسقاط العمر هنا </span>
+                        }
+                    </MudText>
+                </MudDropZone>
+            </MudContainer>
+            <MudDivider Style="color:blue" DividerType="DividerType.Middle" Class="my-6" />
+            <!-- Drop Zone for Skills -->
+            <MudContainer Class="d-flex flex-row mt-2">
+                <MudText Typo="Typo.body1" Class="me-2">المهارات:</MudText>
+                <MudDropZone T="DropItem" Identifier="Skills" CanDrop="@((item) => item.Type == ItemType.Skill)" Class="drop-zone">
+                    <MudText Typo="Typo.body1" Class="text-muted">
+                        @if (_skillsItems != null && _skillsItems.Count > 0)
+                        {
+                            @foreach (var skill in _skillsItems)
+                            {
+                                <span>@skill.Name</span>
+
+                                <br />
+                            }
+                        }
+                        else
+                        {
+                            <span>اسقاط المهارت هنا</span>
+                        }
+                    </MudText>
+                </MudDropZone>
+            </MudContainer>
+
+        </MudPaper>
+
+        <MudDropZone T="DropItem" Identifier="choice" CanDrop="@((item) => false)" Class="rounded-lg mud-alert-text-normal pa-4 mt-6 mx-4 flex-grow-1 d-flex flex-wrap" />
+    </ChildContent>
+
+    <!-- Item Renderer for Available Information -->
+    <ItemRenderer>
+        <!-- Directly render the draggable items -->
+        <MudPaper Class="pa-4 my-2 mx-1" Elevation="3" MudDrop="true" ItemType="ItemType.Name" Item="item">
+            @context.Name
+        </MudPaper>       
+    </ItemRenderer>
+
+</MudDropContainer>
+
+@code {
+    class DropItem
+    {
+        public string Name { get; set; }
+        public ItemType Type { get; set; }
+        public string Place { get; set; }
+    }
+
+    public enum ItemType
+    {
+        Name,
+        Phone,
+        Age,
+        Skill // Added Skill type
+    }
+
+    // List of available items to drag
+    private List<DropItem> _items = new()
+    {
+        new DropItem { Name = "Peter George Alfred", Type = ItemType.Name, Place = "choice" },
+        new DropItem { Name = "01227315759", Type = ItemType.Phone, Place = "choice" },
+        new DropItem { Name = "30", Type = ItemType.Age, Place = "choice" },
+        new DropItem { Name = "Leadership", Type = ItemType.Skill, Place = "choice" }, // Example skill
+        new DropItem { Name = "Communication", Type = ItemType.Skill, Place = "choice" }, // Example skill
+        new DropItem { Name = "Project Management", Type = ItemType.Skill, Place = "choice" } // Example skill
+    };
+
+    // Fields to hold dropped items
+    private DropItem _nameItem;
+    private DropItem _phoneItem;
+    private DropItem _ageItem;
+    private List<DropItem> _skillsItems = new(); // List to hold dropped skills items
+
+    // Handle item drop events
+    private void ItemUpdated(MudItemDropInfo<DropItem> dropItem)
+    {
+        // Update the dropped item in the corresponding field
+        switch (dropItem.DropzoneIdentifier)
+        {
+            case "Name":
+                _nameItem = dropItem.Item;
+                break;
+            case "Phone":
+                _phoneItem = dropItem.Item;
+                break;
+            case "Age":
+                _ageItem = dropItem.Item;
+                break;
+            case "Skills":
+                _skillsItems.Add(dropItem.Item); // Add to skills list
+                break;
+        }
+
+        // Optionally, remove the item from the list if you don't want it to be reused
+        _items.Remove(dropItem.Item);
+        StateHasChanged(); // Trigger UI update
+    }
+}

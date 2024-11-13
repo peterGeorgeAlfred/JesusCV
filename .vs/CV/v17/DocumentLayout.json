@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Peter\\JesusCV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorApp1\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T18:53:10.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "BlazorApp1\\wwwroot\\index.html",
+              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\wwwroot\\index.html",
+              "RelativeToolTip": "BlazorApp1\\wwwroot\\index.html",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-13T18:52:29.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\_Imports.razor",
+              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\_Imports.razor",
+              "RelativeToolTip": "BlazorApp1\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T18:51:12.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Program.cs",
+              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Program.cs",
+              "RelativeToolTip": "BlazorApp1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T18:51:10.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\Home.razor",
+              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorApp1\\Pages\\Home.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T18:50:07.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
