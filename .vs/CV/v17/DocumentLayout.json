@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\Peter\\JesusCV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|d:\\peter\\jesuscv\\blazorapp1\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{038DDBC0-30C6-4FB0-8337-83842632B74B}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -103,75 +83,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Counter.razor",
-              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Pages\\Counter.razor",
-              "RelativeDocumentMoniker": "BlazorApp1\\Pages\\Counter.razor",
-              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Pages\\Counter.razor",
-              "RelativeToolTip": "BlazorApp1\\Pages\\Counter.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8BAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T15:20:11.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "BlazorApp1\\Pages\\Home.razor",
               "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Pages\\Home.razor",
               "RelativeToolTip": "BlazorApp1\\Pages\\Home.razor",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAcwGEAAAAhAAAA",
+              "ViewState": "AQIAACgBAAAAAAAAAAAcwDEBAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-13T20:55:46.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "BlazorApp1\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "BlazorApp1\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-13T18:53:10.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "BlazorApp1\\wwwroot\\index.html",
-              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\wwwroot\\index.html",
-              "RelativeToolTip": "BlazorApp1\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-13T18:52:29.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\_Imports.razor",
-              "RelativeDocumentMoniker": "BlazorApp1\\_Imports.razor",
-              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\_Imports.razor",
-              "RelativeToolTip": "BlazorApp1\\_Imports.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-13T18:51:12.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Peter\\JesusCV\\BlazorApp1\\Program.cs",
-              "RelativeDocumentMoniker": "BlazorApp1\\Program.cs",
-              "ToolTip": "D:\\Peter\\JesusCV\\BlazorApp1\\Program.cs",
-              "RelativeToolTip": "BlazorApp1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T18:51:10.122Z"
+              "WhenOpened": "2024-11-14T16:21:46.842Z",
+              "EditorCaption": ""
             }
           ]
         }

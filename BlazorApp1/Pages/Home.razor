@@ -1,18 +1,21 @@
 ﻿@page "/"
 @using MudBlazor
 
-<MudAlert NoIcon="true"  Severity="Severity.Info" ContentAlignment="HorizontalAlignment.Center">
+<PageTitle>Jesus CV</PageTitle>
+<MudAlert NoIcon="true" Severity="Severity.Info" ContentAlignment="HorizontalAlignment.Center">
     <h1>
-    السيرة الذاتية ليسوع المسيح  
+        السيرة الذاتية ليسوع المسيح
     </h1>
 
 </MudAlert>
 
 
-<MudDropContainer  T="DropItem" Items="_items" ItemsSelector="@((item, dropzone) => item.Place == dropzone)" ItemDropped="ItemUpdated" Class="d-flex flex-column">
+<MudDropContainer T="DropItem" Items="_items" ItemsSelector="@((item, dropzone) => item.Place == dropzone)" ItemDropped="ItemUpdated" Class="d-flex flex-column">
     <ChildContent>
-        <!-- CV Template with Drop Zones for Personal Information and Skills -->
-        <MudPaper Class="p-5 mb-4">
+
+        <div class="d-flex justify-content-center">
+            <!-- CV Template with Drop Zones for Personal Information and Skills -->
+            <MudPaper Class="border-double border-4 mud-border-primary p-5 mb-4 w-50 mt-2">
             <MudText Typo="Typo.h5">معلومات شخصية</MudText>
             <MudGrid>
                 <MudItem xs="9">
@@ -106,10 +109,9 @@
                         </MudDropZone>
                     </MudContainer>
                 </MudItem>
-                
                 <MudItem xs="3">
                     <MudAvatar Style="height:140px; width:140px; font-size:2rem;">
-                        <MudImage  Src="jesus.jpg" Alt="An image of the best dog ever!"></MudImage>
+                        <MudImage Src="jesus.jpg" Alt="An image of the best dog ever!"></MudImage>
                     </MudAvatar>
                 </MudItem>
             </MudGrid>
@@ -118,14 +120,13 @@
             <hr style="color:blue" />
             <MudContainer Class="d-flex flex-row mt-2">
                 <MudIcon Icon="@Icons.Material.Filled.WorkOutline" Color="Color.Primary"></MudIcon>
-                <MudText Typo="Typo.body1" Class="me-2">الخبرات العملية:</MudText>
+                <MudText Typo="Typo.h5" Class="me-2">الخبرات العملية:</MudText>
                 <MudDropZone T="DropItem" Identifier="Experience" CanDrop="@((item) => item.Type == ItemType.Experience)" Class="drop-zone">
                     <MudText Typo="Typo.body1" Class="text-muted">
                         @if (_experienceItems != null && _experienceItems.Count > 0)
                         {
                             @foreach (var experince in _experienceItems)
                             {
-                                <MudIcon Icon="@Icons.Material.Filled.ArrowBack" Color="Color.Primary"></MudIcon>
                                 <span>@experince.Name</span>
 
                                 <br />
@@ -143,14 +144,13 @@
             <hr style="color:blue" />
             <MudContainer Class="d-flex flex-row mt-2">
                 <MudIcon Icon="@Icons.Material.Filled.CastForEducation" Color="Color.Primary"></MudIcon>
-                <MudText Typo="Typo.body1" Class="me-2">التعليم:</MudText>
+                <MudText Typo="Typo.h5" Class="me-2">التعليم:</MudText>
                 <MudDropZone T="DropItem" Identifier="Education" CanDrop="@((item) => item.Type == ItemType.Education)" Class="drop-zone">
                     <MudText Typo="Typo.body1" Class="text-muted">
                         @if (_educationItems != null && _educationItems.Count > 0)
                         {
                             @foreach (var education in _educationItems)
                             {
-                                <MudIcon Icon="@Icons.Material.Filled.ArrowBack" Color="Color.Primary"></MudIcon>
                                 <span>@education.Name</span>
 
                                 <br />
@@ -164,19 +164,18 @@
                 </MudDropZone>
             </MudContainer>
 
-            
+
             <!-- Drop Zone for Skills -->
-            <hr style="color:blue"/>
+            <hr style="color:blue" />
             <MudContainer Class="d-flex flex-row mt-2">
                 <MudIcon Icon="@Icons.Material.Filled.Key" Color="Color.Primary"></MudIcon>
-                <MudText Typo="Typo.body1" Class="me-2">المهارات:</MudText>
+                <MudText Typo="Typo.h5" Class="me-2">المهارات:</MudText>
                 <MudDropZone T="DropItem" Identifier="Skills" CanDrop="@((item) => item.Type == ItemType.Skill)" Class="drop-zone">
                     <MudText Typo="Typo.body1" Class="text-muted">
                         @if (_skillsItems != null && _skillsItems.Count > 0)
                         {
                             @foreach (var skill in _skillsItems)
                             {
-                                <MudIcon Icon="@Icons.Material.Filled.ArrowBack" Color="Color.Primary"></MudIcon>
                                 <span>@skill.Name</span>
 
                                 <br />
@@ -194,14 +193,13 @@
             <hr style="color:blue" />
             <MudContainer Class="d-flex flex-row mt-2">
                 <MudIcon Icon="@Icons.Material.Filled.VolunteerActivism" Color="Color.Primary"></MudIcon>
-                <MudText Typo="Typo.body1" Class="me-2">العمل التطوعى:</MudText>
+                <MudText Typo="Typo.h5" Class="me-2">العمل التطوعى:</MudText>
                 <MudDropZone T="DropItem" Identifier="VolunteerWorking" CanDrop="@((item) => item.Type == ItemType.VolunteerWorking)" Class="drop-zone">
                     <MudText Typo="Typo.body1" Class="text-muted">
                         @if (_volunteerWorkingItems != null && _volunteerWorkingItems.Count > 0)
                         {
                             @foreach (var item in _volunteerWorkingItems)
                             {
-                                <MudIcon Icon="@Icons.Material.Filled.ArrowBack" Color="Color.Primary"></MudIcon>
                                 <span>@item.Name</span>
 
                                 <br />
@@ -219,14 +217,13 @@
             <hr style="color:blue" />
             <MudContainer Class="d-flex flex-row mt-2">
                 <MudIcon Icon="@Icons.Material.Filled.DocumentScanner" Color="Color.Primary"></MudIcon>
-                <MudText Typo="Typo.body1" Class="me-2">المراجع :</MudText>
+                <MudText Typo="Typo.h5" Class="me-2">المراجع :</MudText>
                 <MudDropZone T="DropItem" Identifier="References" CanDrop="@((item) => item.Type == ItemType.References)" Class="drop-zone">
                     <MudText Typo="Typo.body1" Class="text-muted">
                         @if (_referencesItems != null && _referencesItems.Count > 0)
                         {
                             @foreach (var item in _referencesItems)
                             {
-                                <MudIcon Icon="@Icons.Material.Filled.ArrowBack" Color="Color.Primary"></MudIcon>
                                 <span>@item.Name</span>
 
                                 <br />
@@ -241,6 +238,7 @@
             </MudContainer>
 
         </MudPaper>
+        </div>
 
         <MudDropZone T="DropItem" Identifier="choice" CanDrop="@((item) => false)" Class="rounded-lg mud-alert-text-normal pa-4 mt-6 mx-4 flex-grow-1 d-flex flex-wrap" />
     </ChildContent>
@@ -249,8 +247,10 @@
     <ItemRenderer>
         <!-- Directly render the draggable items -->
         <MudPaper Class="pa-4 my-2 mx-1" Elevation="3" MudDrop="true" ItemType="ItemType.Name" Item="item">
-            @context.Name
-        </MudPaper>       
+            <span style="font-size:150%">
+             @context.Name
+            </span>
+        </MudPaper>
     </ItemRenderer>
 
 </MudDropContainer>
@@ -280,39 +280,39 @@
     // List of available items to drag
     private List<DropItem> _items = new()
     {
-        new DropItem { Name = "يسوع المسيح ابن داود ابن ابراهيم / يسوع ابن يوسف بن هالي", Type = ItemType.Name, Place = "choice" },
-        new DropItem { Name = "  بيت لحم، اليهودية", Type = ItemType.DoBAddress, Place = "choice" },
         new DropItem { Name = "  الجليل، الناصره", Type = ItemType.Address, Place = "choice" },
-        new DropItem { Name = "771550", Type = ItemType.Phone, Place = "choice" },
-        new DropItem { Name = "33", Type = ItemType.Age, Place = "choice" },
         new DropItem { Name = "كارز ومبشر", Type = ItemType.Experience, Place = "choice" },
-        new DropItem { Name = " معلم", Type = ItemType.Experience, Place = "choice" },
+        new DropItem { Name = "يسوع المسيح ابن داود ابن ابراهيم / يسوع ابن يوسف بن هالي", Type = ItemType.Name, Place = "choice" },
         new DropItem { Name = "معالج", Type = ItemType.Experience, Place = "choice" },
+        new DropItem { Name = "771550", Type = ItemType.Phone, Place = "choice" },
         new DropItem { Name = "نجار", Type = ItemType.Experience, Place = "choice" },
-        new DropItem { Name = "دراسات فى الهيكل / معرفة الكتاب المقدس منذ صغره", Type = ItemType.Education, Place = "choice" },
+        new DropItem { Name = "  بيت لحم، اليهودية", Type = ItemType.DoBAddress, Place = "choice" },
+        new DropItem { Name = "33", Type = ItemType.Age, Place = "choice" },
+        new DropItem { Name = " معلم", Type = ItemType.Experience, Place = "choice" },
         new DropItem { Name = "القيادة و بناء الفريق", Type = ItemType.Skill, Place = "choice" },
         new DropItem { Name = "إلقاء الخطابات العامة والتحدث للجمهور", Type = ItemType.Skill, Place = "choice" },
+        new DropItem { Name = "دراسات فى الهيكل / معرفة الكتاب المقدس منذ صغره", Type = ItemType.Education, Place = "choice" },
         new DropItem { Name = "تطبيق طرق جديدة فى التعليم", Type = ItemType.Skill, Place = "choice" },
+        new DropItem { Name = "الاهتمام بالتفاصيل", Type = ItemType.Skill, Place = "choice" },
         new DropItem { Name = "إدارة وتنظيم الوقت", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = "االهتمام بالتفاصيل", Type = ItemType.Skill, Place = "choice" },
+        new DropItem { Name = "ادارة المشاريع والتخطيط المستقبلى", Type = ItemType.Skill, Place = "choice" },
         new DropItem { Name = "التفكير االستراتيجى", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = "ارة المشاريع والتخطيط المستقبلى", Type = ItemType.Skill, Place = "choice" },
         new DropItem { Name = "دارة الحوار والتفاوض", Type = ItemType.Skill, Place = "choice" },
         new DropItem { Name = "التنظيم والترتيب", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = "االلتزام بالمبادىء والقدرة على اتخاذ قرارات حاسمة", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = "االستماع الجيد", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = " المرونة او حل المشكالت الطارئة", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = " العمل تحت ضغط", Type = ItemType.Skill, Place = "choice" },
-        new DropItem { Name = "معجزات الشفاء (بدون طلب - الرب تحنن )", Type = ItemType.VolunteerWorking, Place = "choice" },
+        new DropItem { Name = "الالتزام بالمبادىء والقدرة على اتخاذ قرارات حاسمة", Type = ItemType.Skill, Place = "choice" },
+        new DropItem { Name = "السماع الجيد", Type = ItemType.Skill, Place = "choice" },
         new DropItem { Name = "يوحنا المعمدان / نبى", Type = ItemType.References, Place = "choice" },
-        new DropItem { Name = "سمعان بطرس / تلميذ", Type = ItemType.References, Place = "choice" },
+        new DropItem { Name = " المرونة او حل المشكالت الطارئة", Type = ItemType.Skill, Place = "choice" },
+        new DropItem { Name = "قائد المئة / ظابط بالجيش", Type = ItemType.References, Place = "choice" },
+        new DropItem { Name = "معجزات الشفاء (بدون طلب - الرب تحنن )", Type = ItemType.VolunteerWorking, Place = "choice" },
         new DropItem { Name = "مريم المجدلية / تابِعة وشا ِهدة", Type = ItemType.References, Place = "choice" },
-        new DropItem { Name = "قائد المئة", Type = ItemType.References, Place = "choice" },
+        new DropItem { Name = " العمل تحت ضغط", Type = ItemType.Skill, Place = "choice" },
+        new DropItem { Name = "سمعان بطرس / تلميذ", Type = ItemType.References, Place = "choice" },
 
     };
 
     // Fields to hold dropped items
-    private DropItem _nameItem =default!;
+    private DropItem _nameItem = default!;
     private DropItem _phoneItem = default!;
     private DropItem _ageItem = default!;
     private List<DropItem> _skillsItems = new();
@@ -339,24 +339,24 @@
                 _ageItem = dropItem.Item;
                 break;
             case "Skills":
-                _skillsItems.Add(dropItem.Item); 
+                _skillsItems.Add(dropItem.Item);
                 break;
             case "DoBAddress":
                 _dobAddress = dropItem.Item;
                 break;
             case "Address":
-             _address= dropItem.Item;
+                _address = dropItem.Item;
                 break;
             case "Experience":
-                _experienceItems.Add(dropItem.Item) ;
+                _experienceItems.Add(dropItem.Item);
                 break;
             case "Education":
-                _educationItems.Add(dropItem.Item) ; 
+                _educationItems.Add(dropItem.Item);
                 break;
             case "VolunteerWorking":
                 _volunteerWorkingItems.Add(dropItem.Item);
                 break;
-            case "References":                
+            case "References":
                 _referencesItems.Add(dropItem.Item);
                 break;
         }
@@ -365,6 +365,6 @@
         _items.Remove(dropItem.Item);
         StateHasChanged(); // Trigger UI update
 
-        
+
     }
 }
